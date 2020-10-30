@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Student</title>
+</head>
+<body>
+<form action="{{url_for('addstudent')}}" method="POST">
+    <h3>Student Information</h3>
+    <div>
+        <label>Name:</label>
+    </div>
+    <div>
+        <input type="text" name="name">
+    </div>
+    <div>
+        <label>Address:</label>
+    </div>
+    <div>
+        <textarea type="text" name="address"></textarea>
+    </div>
+    <div>
+        <label>City:</label>
+    </div>
+    <div>
+        <input type="text" name="city">
+    </div>
+    <div>
+        <label>PinCode:</label>
+    </div>
+    <div>
+        <input type="text" name="pin">
+    </div>
+    <div>
+        <input type="submit" name="submit">
+    </div>
+</form>
+</body>
+</html>
